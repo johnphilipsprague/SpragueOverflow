@@ -1,11 +1,13 @@
 import React from "react"
-import logo from "./logo.svg"
+import logo from "../logo.svg"
 import "./App.css"
+import { NavBar } from "./NavBar"
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
+			{/* <NavBar /> */}
+			<div className="App-div">
 				<img src={logo} className="App-logo" alt="logo" />
 				<p>
 					{/* Edit <code>src/App.tsx</code> and save to reload. */}
@@ -17,7 +19,7 @@ function App() {
 					alt={"Silly Cat Gif"}
 					src={"https://i.imgur.com/zlFH5oo.gif"}
 				/>
-			</header>
+			</div>
 		</div>
 	)
 }
