@@ -1,16 +1,14 @@
 import React from "react"
 import logo from "./logo.svg"
-import "./App.css"
-import { NavBar } from "../NavBar/NavBar"
+import "./Home.css"
 
-function App() {
+function Home() {
 	return (
-		<div className="App">
-			{/* <NavBar /> */}
-			<div className="App-div">
-				<img src={logo} className="App-logo" alt="logo" />
+		<div className="Home">
+			<div className="Home-div">
+				<img src={logo} className="Home-logo" alt="logo" />
 				<p>
-					{/* Edit <code>src/App.tsx</code> and save to reload. */}
+					{/* Edit <code>src/Home.tsx</code> and save to reload. */}
 					John is currently working tirelessly on Sprague Overflow at
 					the moment.
 				</p>
@@ -24,4 +22,4 @@ function App() {
 	)
 }
 
-export default App
+export default Home
