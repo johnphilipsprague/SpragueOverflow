@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-import App from "./Components/App"
+import App from "./Components/App/App"
 import reportWebVitals from "./reportWebVitals"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
@@ -16,6 +16,7 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()
 
+//LinkedIn svg icon
 /* <svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon icon-tabler icon-tabler-brand-linkedin"
@@ -40,5 +41,8 @@ reportWebVitals()
       height="16"
       rx="2"
     />
-    <line x1="8" y1="11" x2="8" y2="16" /> <line x1="8" y1="8" x2="8" y2="8.01" />
-    <line x1="12" y1="16" x2="12" y2="11" /> <path d="M16 16v-3a2 2 0 0 0 -4 0" /> </svg> */
+    <line x1="8" y1="11" x2="8" y2="16" />
+    <line x1="8" y1="8" x2="8" y2="8.01" />
+    <line x1="12" y1="16" x2="12" y2="11" />
+    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+  </svg> */
