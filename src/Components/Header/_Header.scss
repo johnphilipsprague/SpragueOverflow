@@ -1,0 +1,19 @@
+header {
+    @include flexCenter(column);
+}
+
+nav {
+    @include flexCenter(row);
+    justify-content: space-between;
+    width: 80vw;
+    padding: 0 5vw;
+}
+
+.link-container {
+    @include flexCenter(row);
+    width: 13vw;
+}
+
+#title {
+    margin: 3vh;
+}
