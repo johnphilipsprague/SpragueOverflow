@@ -1,4 +1,4 @@
-interface ProjectData {
+export interface ProjectData {
     imageURL: string;
     title: string;
     description: string;
@@ -10,15 +10,8 @@ interface ProjectData {
     role?: string;
 }
 
-interface Projects {
-    spragueOverflow: ProjectData;
-    adventuresOfMort: ProjectData;
-    bookStack: ProjectData;
-    fishinWithFred: ProjectData;
-}
-
-export const projectData: Projects = {
-    spragueOverflow: {
+export const projectData: Array<ProjectData> = [
+    {
         imageURL: 'some imgur link',
         title: 'Sprague Overflow',
         description: 'My Portfolio Website',
@@ -28,7 +21,7 @@ export const projectData: Projects = {
         appLink: 'https://www.spragueoverflow.com',
         gitHubLink: 'https://github.com/johnphilipsprague/SpragueOverflow'
     },
-    adventuresOfMort: {
+    {
         imageURL: 'some imgur link',
         title: 'Adventures of Mort',
         description: 'Final project of Fullstack Academy',
@@ -39,7 +32,7 @@ export const projectData: Projects = {
         gitHubLink: 'https://github.com/Group-10-Game-Dev/Group-10-Game-Dev.github.io',
         role: 'I did nothing'
     },
-    bookStack: {
+    {
         imageURL: 'some imgur link',
         title: 'Bookstack',
         description: 'A project to create an e-commerce website',
@@ -50,7 +43,7 @@ export const projectData: Projects = {
         gitHubLink: 'https://github.com/2202-chartreuse-gs/BookStack',
         role: 'Back end developer'
     },
-    fishinWithFred: {
+    {
         imageURL: 'some imgur link',
         title: "Fishin' with Fred",
         description: 'A text adventure',
@@ -60,4 +53,4 @@ export const projectData: Projects = {
         appLink: 'https://johnphilipsprague.github.io/fishin-with-fred/',
         gitHubLink: 'https://github.com/johnphilipsprague/fishin-with-fred'
     }
-};
+];
