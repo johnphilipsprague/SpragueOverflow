@@ -1,0 +1,13 @@
+.Home {
+    text-align: center;
+}
+
+.Home-div {
+    @include flexCenter(column);
+    font-size: calc(10px + 2vmin);
+    color: #d1d5de;
+}
+
+.Home-link {
+    color: #009180;
+}

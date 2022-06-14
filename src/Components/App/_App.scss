@@ -1,0 +1,16 @@
+body {
+    background-color: $secondaryColor;
+}
+#content-container {
+    @include flexCenter(column);
+}
+
+#content {
+    @include flexCenter(column);
+
+    border: 2px;
+    border-color: $primaryColor;
+    border-style: double;
+    height: 80vh;
+    width: 80vw;
+}
