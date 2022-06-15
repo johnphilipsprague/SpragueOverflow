@@ -12,19 +12,9 @@ export interface ProjectData {
 
 export const projectData: Array<ProjectData> = [
     {
-        imageURL: 'some imgur link',
-        title: 'Sprague Overflow',
-        description: 'My Portfolio Website',
-        teamSize: 1,
-        time: '1 week',
-        technologies: 'TypeScript, React, Sass',
-        appLink: 'https://www.spragueoverflow.com',
-        gitHubLink: 'https://github.com/johnphilipsprague/SpragueOverflow'
-    },
-    {
-        imageURL: 'some imgur link',
+        imageURL: 'https://i.imgur.com/AjxJqkq.png',
         title: 'Adventures of Mort',
-        description: 'Final project of Fullstack Academy',
+        description: '"A top-down RPG where you control Mort the necromancer. You and your undead companions must combat waves of heroes and ascend the “evil” princess tower to rescue your dragon."',
         teamSize: 4,
         time: '2 weeks',
         technologies: 'JavaScript, Phaser 3.55, tiled, webpack',
@@ -33,9 +23,9 @@ export const projectData: Array<ProjectData> = [
         role: 'I did nothing'
     },
     {
-        imageURL: 'some imgur link',
+        imageURL: 'https://i.imgur.com/xG0R9zP.png ',
         title: 'Bookstack',
-        description: 'A project to create an e-commerce website',
+        description: '"An e-commerce book site where customers can peruse a large list of public domain books, see book details, and add them to their collection."',
         teamSize: 4,
         time: '1 and a half weeks',
         technologies: 'JavaScript, React, Redux, Node, Express, Sequelize, PostgreSQL, MaterialUI',
@@ -44,13 +34,23 @@ export const projectData: Array<ProjectData> = [
         role: 'Back end developer'
     },
     {
-        imageURL: 'some imgur link',
+        imageURL: 'https://i.imgur.com/sOOrwhG.png',
         title: "Fishin' with Fred",
-        description: 'A text adventure',
+        description: '"A text adventure in which players navigate a forest and interact with its denizens to find a pond to fish in."',
         teamSize: 1,
         time: '1 day',
         technologies: 'JavaScript, CSS',
         appLink: 'https://johnphilipsprague.github.io/fishin-with-fred/',
         gitHubLink: 'https://github.com/johnphilipsprague/fishin-with-fred'
+    },
+    {
+        imageURL: 'https://i.imgur.com/yAn19VP.png',
+        title: 'This Website',
+        description: '"Sprague Overflow is my personal portfolio website designed to showcase my projects and talents, while also being a playground to practice new technologies."',
+        teamSize: 1,
+        time: '1 week',
+        technologies: 'TypeScript, React, Sass',
+        appLink: 'https://www.spragueoverflow.com',
+        gitHubLink: 'https://github.com/johnphilipsprague/SpragueOverflow'
     }
 ];

@@ -1,6 +1,18 @@
 footer {
-    @include flexCenter(row);
-    justify-content: space-evenly;
+    @include flexCenter(column);
     width: 80vw;
-    margin: 5vh 5vw 0;
+    margin: 2vw;
+    h1 {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    #contact-icons {
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        font-size: 2.7em;
+        width: 50vw;
+        a {
+            color: $accentColor;
+        }
+    }
 }

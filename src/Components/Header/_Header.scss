@@ -1,19 +1,47 @@
 header {
     @include flexCenter(column);
+    width: 80vw;
+    button {
+        @include buttonReset;
+    }
 }
 
 nav {
     @include flexCenter(row);
     justify-content: space-between;
-    width: 80vw;
-    padding: 0 5vw;
+    width: inherit;
+    padding: 1vw 5vw;
+    font-size: 1.2em;
 }
 
 .link-container {
     @include flexCenter(row);
     width: 13vw;
+    button {
+        &:hover {
+            color: $accentColor;
+            transform: scale(1);
+        }
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 #title {
-    margin: 3vh;
+    margin: 3vw;
+    width: inherit;
+    img {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    #title {
+        width: 80vw;
+        @include flexCenter(column);
+        img {
+            width: 60vw;
+        }
+    }
 }

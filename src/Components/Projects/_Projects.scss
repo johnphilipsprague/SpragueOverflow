@@ -1,0 +1,69 @@
+section {
+    @include flexCenter(column);
+    margin: 1em 0;
+    img {
+        width: 25vw;
+    }
+}
+
+.single-project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 70vw;
+    margin: 1em 0 1em;
+    padding: 1em 2em;
+}
+
+.project-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20vw;
+    line-height: 1.2em;
+    h1 {
+        font-size: 1.3em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 2em 0 0.5em;
+    }
+    p {
+        margin: 0.3em 0;
+    }
+    .project-description {
+        margin: 2em 0;
+        font-style: italic;
+    }
+    span {
+        font-weight: bolder;
+    }
+    .project-links {
+        @include flexCenter(row);
+    }
+    a {
+        color: $accentColor;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .single-project-container {
+        flex-direction: column;
+    }
+    .project-info {
+        width: 50vw;
+        h1 {
+            margin: 0.5em 0 0.5em;
+        }
+        a {
+            font-size: 1.5em;
+        }
+    }
+
+    section {
+        img {
+            width: 60vw;
+        }
+    }
+}

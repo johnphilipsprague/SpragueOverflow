@@ -8,11 +8,13 @@ export const Header: React.FC<HeaderProps> = () => {
     return (
         <header>
             <div id="title">
-                <button onClick={() => navigate('/')}>Sprague Overflow</button>
+                <button onClick={() => navigate('/')}>
+                    <img src="https://i.imgur.com/2HGQoWo.png" alt="Sprague Overflow" />
+                </button>
             </div>
             <nav>
                 <div className="link-container">
-                    <button onClick={() => navigate('/aboutme')}>About Me</button>
+                    <button onClick={() => navigate('/aboutme')}>About</button>
                 </div>
                 <div className="link-container">
                     <button onClick={() => navigate('/projects')}>Projects</button>
