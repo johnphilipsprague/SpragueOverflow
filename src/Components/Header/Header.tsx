@@ -6,21 +6,27 @@ interface HeaderProps {}
 export const Header: React.FC<HeaderProps> = () => {
     const navigate = useNavigate();
     return (
-        <header>
-            <div id="title">
-                <button onClick={() => navigate('/')}>
-                    <img src="https://i.imgur.com/2HGQoWo.png" alt="Sprague Overflow" />
+        <header className="header">
+            <div className="header__logo-wrapper">
+                <button className="header__logo button" onClick={() => navigate('/')}>
+                    <img className="header__logo-image" src="https://i.imgur.com/2HGQoWo.png" alt="Sprague Overflow" />
                 </button>
             </div>
-            <nav>
-                <div className="link-container">
-                    <button onClick={() => navigate('/aboutme')}>About</button>
+            <nav className="header__nav-bar">
+                <div className="header__link-wrapper">
+                    <button className="header__link button" onClick={() => navigate('/aboutme')}>
+                        About
+                    </button>
                 </div>
-                <div className="link-container">
-                    <button onClick={() => navigate('/projects')}>Projects</button>
+                <div className="header__link-wrapper">
+                    <button className="header__link button" onClick={() => navigate('/projects')}>
+                        Projects
+                    </button>
                 </div>
-                <div className="link-container">
-                    <button onClick={() => navigate('/skills')}>Skills</button>
+                <div className="header__link-wrapper">
+                    <button className="header__link button" onClick={() => navigate('/skills')}>
+                        Skills
+                    </button>
                 </div>
             </nav>
         </header>

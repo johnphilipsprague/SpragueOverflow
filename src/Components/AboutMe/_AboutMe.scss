@@ -1,0 +1,10 @@
+.about-me {
+    @include flexCenter(row);
+    @include bp(ursa-minor) {
+        @include flexCenter(column);
+        &__image {
+            width: 40vw;
+            margin: 2em;
+        }
+    }
+}

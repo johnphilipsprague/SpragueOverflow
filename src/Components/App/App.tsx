@@ -7,14 +7,12 @@ interface AppProps {}
 
 export const App: React.FC<AppProps> = () => {
     return (
-        <>
-            <div id="content-container">
-                <Header />
-                <div id="content">
-                    <Outlet />
-                </div>
-                <Footer />
+        <div className="app">
+            <Header />
+            <div className="app__content">
+                <Outlet />
             </div>
-        </>
+            <Footer />
+        </div>
     );
 };

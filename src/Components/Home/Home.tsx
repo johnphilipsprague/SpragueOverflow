@@ -4,12 +4,13 @@ interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = () => {
     return (
-        <div className="Home">
-            <div className="Home-div">
-                <p>John is currently working tirelessly on Sprague Overflow at the moment.</p>
-                <p>Enjoy this gif of a kitten while you wait!</p>
-                <img alt={'Silly Cat Gif'} src={'https://i.imgur.com/zlFH5oo.gif'} />
-            </div>
+        <div className="home">
+            <p className="home__greeting">Whether it was intentional or accidental, you've landed on my corner of the internet. I welcome you all the same!</p>
+            <p className="home__greeting">
+                My name is John Philip Sprague and this is my portfolio. In it's pages you will find information on me, my ventures into the tech industry, and records of what I've learned so far on
+                my journey.
+            </p>
+            <p className="home__greeting">Now go! Explore! If you get lost, be not afraid, for I remembered my error handling! </p>
         </div>
     );
 };

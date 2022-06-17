@@ -1,16 +1,15 @@
-body {
+.app {
+    @include flexCenter(column);
+
     background-color: $secondaryColor;
-}
-#content-container {
-    @include flexCenter(column);
-}
 
-#content {
-    @include flexCenter(column);
+    &__content {
+        @include flexCenter(column);
 
-    border: 3px;
-    border-color: $primaryColor;
-    border-style: double;
-    width: 80vw;
-    padding: 1vw;
+        border: 3px;
+        border-color: $primaryColor;
+        border-style: double;
+        width: 80vw;
+        padding: 1vw;
+    }
 }

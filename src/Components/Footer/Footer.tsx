@@ -1,25 +1,25 @@
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 interface FooterProps {}
 
 export const Footer: React.FC<FooterProps> = () => {
     return (
-        <footer>
-            <h1>Contact Me</h1>
-            <div id="contact-icons">
+        <footer className="footer">
+            <h1 className="footer__contact-me">Contact Me</h1>
+            <div className="footer__icon-container">
                 <div>
-                    <a href="https://www.linkedin.com/in/johnphilipsprague/" rel="noreferrer" target="_blank">
+                    <a className="footer__icon" href="https://www.linkedin.com/in/johnphilipsprague/" rel="noreferrer" target="_blank">
                         <AiFillLinkedin />
                     </a>
                 </div>
                 <div>
-                    <a href="mailto:jpsprague95@gmail.com" rel="noreferrer" target="_blank">
-                        <AiFillMail />
+                    <a className="footer__icon" href="mailto:jpsprague95@gmail.com" rel="noreferrer" target="_blank">
+                        <AiOutlineMail />
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/johnphilipsprague" rel="noreferrer" target="_blank">
+                    <a className="footer__icon" href="https://github.com/johnphilipsprague" rel="noreferrer" target="_blank">
                         <AiFillGithub />
                     </a>
                 </div>

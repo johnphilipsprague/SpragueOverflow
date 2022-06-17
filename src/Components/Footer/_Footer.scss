@@ -1,18 +1,20 @@
-footer {
+.footer {
     @include flexCenter(column);
     width: 80vw;
-    margin: 2vw;
-    h1 {
+    margin: 2em;
+    &__contact-me {
         font-size: 1.5em;
         text-decoration: underline;
     }
-    #contact-icons {
+
+    &__icon-container {
         @include flexCenter(row);
+        margin: 1em 0 0.2em;
         justify-content: space-evenly;
         font-size: 2.7em;
         width: 50vw;
-        a {
-            color: $accentColor;
-        }
+    }
+    &__icon {
+        color: $accentColor;
     }
 }

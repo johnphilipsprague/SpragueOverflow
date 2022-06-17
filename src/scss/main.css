@@ -110,6 +110,20 @@ input {
   border-radius: 0;
 }
 
+.button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  background-color: #2f2f2f;
+}
+
 body {
   margin: 0;
   color: #d1d5de;
@@ -122,11 +136,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-body {
-  background-color: #2f2f2f;
-}
-
-#content-container {
+.app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,9 +150,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #2f2f2f;
 }
 
-#content {
+.app__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,11 +174,7 @@ body {
   padding: 1vw;
 }
 
-.Home {
-  text-align: center;
-}
-
-.Home-div {
+.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,11 +188,54 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: #d1d5de;
 }
 
-section {
+.home__greeting {
+  margin: 1em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me__image {
+    width: 40vw;
+    margin: 2em;
+  }
+}
+
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,11 +252,7 @@ section {
   margin: 1em 0;
 }
 
-section img {
-  width: 25vw;
-}
-
-.single-project-container {
+.projects__project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +271,11 @@ section img {
   padding: 1em 2em;
 }
 
-.project-info {
+.projects__thumbnail {
+  width: 25vw;
+}
+
+.projects__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,27 +290,27 @@ section img {
   line-height: 1.2em;
 }
 
-.project-info h1 {
+.projects__title {
   font-size: 1.3em;
   font-weight: bold;
   text-decoration: underline;
   margin: 2em 0 0.5em;
 }
 
-.project-info p {
-  margin: 0.3em 0;
-}
-
-.project-info .project-description {
+.projects__description {
   margin: 2em 0;
   font-style: italic;
 }
 
-.project-info span {
+.projects__data {
+  margin: 0.3em 0;
+}
+
+.projects__data-category {
   font-weight: bolder;
 }
 
-.project-info .project-links {
+.projects__link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,33 +326,33 @@ section img {
           flex-direction: row;
 }
 
-.project-info a {
+.projects__link {
   color: #009180;
   font-size: 2.5em;
 }
 
 @media (max-width: 1000px) {
-  .single-project-container {
+  .projects__project-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .project-info {
+  .projects__info {
     width: 50vw;
   }
-  .project-info h1 {
+  .projects__title {
     margin: 0.5em 0 0.5em;
   }
-  .project-info a {
+  .projects__link {
     font-size: 1.5em;
   }
-  section img {
+  .projects__thumbnail {
     width: 60vw;
   }
 }
 
-footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,15 +367,15 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80vw;
-  margin: 2vw;
+  margin: 2em;
 }
 
-footer h1 {
+.footer__contact-me {
   font-size: 1.5em;
   text-decoration: underline;
 }
 
-footer #contact-icons {
+.footer__icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +389,7 @@ footer #contact-icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 1em 0 0.2em;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -346,11 +397,11 @@ footer #contact-icons {
   width: 50vw;
 }
 
-footer #contact-icons a {
+.footer__icon {
   color: #009180;
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,17 +418,16 @@ header {
   width: 80vw;
 }
 
-header button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+.header__logo-wrapper {
+  width: inherit;
+  margin: 1vw;
 }
 
-nav {
+.header__logo-image {
+  width: 26vw;
+}
+
+.header__nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,7 +449,7 @@ nav {
   font-size: 1.2em;
 }
 
-.link-container {
+.header__link-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,28 +466,18 @@ nav {
   width: 13vw;
 }
 
-.link-container button:hover {
+.header__link:hover {
   color: #009180;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.link-container button:focus {
+.header__link:focus {
   text-decoration: underline;
 }
 
-#title {
-  margin: 3vw;
-  width: inherit;
-}
-
-#title img {
-  width: 20vw;
-}
-
 @media (max-width: 1000px) {
-  #title {
-    width: 80vw;
+  .header__logo-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -451,8 +491,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 80vw;
   }
-  #title img {
+  .header__logo-image {
     width: 60vw;
   }
 }

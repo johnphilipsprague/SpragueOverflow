@@ -1,68 +1,64 @@
-section {
+.projects {
     @include flexCenter(column);
     margin: 1em 0;
-    img {
+    &__project-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 70vw;
+        margin: 1em 0 1em;
+        padding: 1em 2em;
+    }
+    &__thumbnail {
         width: 25vw;
     }
-}
-
-.single-project-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 70vw;
-    margin: 1em 0 1em;
-    padding: 1em 2em;
-}
-
-.project-info {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 20vw;
-    line-height: 1.2em;
-    h1 {
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 20vw;
+        line-height: 1.2em;
+    }
+    &__title {
         font-size: 1.3em;
         font-weight: bold;
         text-decoration: underline;
         margin: 2em 0 0.5em;
     }
-    p {
-        margin: 0.3em 0;
-    }
-    .project-description {
+    &__description {
         margin: 2em 0;
         font-style: italic;
     }
-    span {
+    &__data {
+        margin: 0.3em 0;
+    }
+    &__data-category {
         font-weight: bolder;
     }
-    .project-links {
+    &__link-container {
         @include flexCenter(row);
     }
-    a {
+    &__link {
         color: $accentColor;
         font-size: 2.5em;
     }
-}
 
-@media (max-width: 1000px) {
-    .single-project-container {
-        flex-direction: column;
-    }
-    .project-info {
-        width: 50vw;
-        h1 {
+    // Media Query
+    @include bp(ursa-minor) {
+        &__project-container {
+            flex-direction: column;
+        }
+        &__info {
+            width: 50vw;
+        }
+        &__title {
             margin: 0.5em 0 0.5em;
         }
-        a {
+        &__link {
             font-size: 1.5em;
         }
-    }
-
-    section {
-        img {
+        &__thumbnail {
             width: 60vw;
         }
     }

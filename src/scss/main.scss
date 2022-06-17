@@ -1,9 +1,10 @@
-@import './base/reset.scss';
-@import './utils/mixins';
 @import './utils/variables';
+@import './utils/mixins';
+@import './base/reset.scss';
 @import './base/typography';
 @import '../Components/App/App';
 @import '../Components/Home/Home';
+@import '../Components/AboutMe/AboutMe';
 @import '../Components/Projects/Projects';
 @import '../Components/Footer/Footer';
 @import '../Components/Header/Header';

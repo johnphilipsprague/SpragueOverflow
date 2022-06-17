@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import pages from './';
 
-const { AboutMe, App, Home, Projects, Skills } = pages;
+const { AboutMe, App, Home, Projects, Skills, NotFound } = pages;
 
 interface RoutesProps {}
 
@@ -15,6 +15,7 @@ export const routes: React.FC<RoutesProps> = (props) => {
                     <Route path="/aboutme" element={<AboutMe />}></Route>
                     <Route path="/projects" element={<Projects />}></Route>
                     <Route path="/skills" element={<Skills />}></Route>
+                    <Route element={<NotFound />}></Route>
                 </Route>
             </Routes>
         </BrowserRouter>

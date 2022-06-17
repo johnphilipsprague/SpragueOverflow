@@ -1,23 +1,26 @@
-header {
+.header {
     @include flexCenter(column);
+
     width: 80vw;
-    button {
-        @include buttonReset;
+    &__logo-wrapper {
+        width: inherit;
+        margin: 1vw;
     }
-}
-
-nav {
-    @include flexCenter(row);
-    justify-content: space-between;
-    width: inherit;
-    padding: 1vw 5vw;
-    font-size: 1.2em;
-}
-
-.link-container {
-    @include flexCenter(row);
-    width: 13vw;
-    button {
+    &__logo-image {
+        width: 26vw;
+    }
+    &__nav-bar {
+        @include flexCenter(row);
+        justify-content: space-between;
+        width: inherit;
+        padding: 1vw 5vw;
+        font-size: 1.2em;
+    }
+    &__link-wrapper {
+        @include flexCenter(row);
+        width: 13vw;
+    }
+    &__link {
         &:hover {
             color: $accentColor;
             transform: scale(1);
@@ -26,21 +29,12 @@ nav {
             text-decoration: underline;
         }
     }
-}
-
-#title {
-    margin: 3vw;
-    width: inherit;
-    img {
-        width: 20vw;
-    }
-}
-
-@media (max-width: 1000px) {
-    #title {
-        width: 80vw;
-        @include flexCenter(column);
-        img {
+    @include bp(ursa-minor) {
+        &__logo-wrapper {
+            @include flexCenter(column);
+            width: 80vw;
+        }
+        &__logo-image {
             width: 60vw;
         }
     }

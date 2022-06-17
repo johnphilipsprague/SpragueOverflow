@@ -7,33 +7,33 @@ interface ProjectsProps {}
 
 export const Projects: React.FC<ProjectsProps> = () => {
     return (
-        <section>
+        <section className="projects">
             {projectData.map((project: ProjectData, idx: number) => (
-                <div key={idx} className="single-project-container">
-                    <img className="project-image" src={project.imageURL} alt="project logo" />
-                    <div className="project-info">
-                        <h1>{project.title}</h1>
-                        <p className="project-description">{project.description}</p>
-                        <p>
-                            <span>Team Size: </span>
+                <div key={idx} className="projects__project-container">
+                    <img className="projects__thumbnail" src={project.imageURL} alt="project thumbnail" />
+                    <div className="projects__info">
+                        <h1 className="projects__title">{project.title}</h1>
+                        <p className="projects__description">{project.description}</p>
+                        <p className="projects__data">
+                            <span className="projects__data-category">Team Size: </span>
                             {project.teamSize}
                         </p>
-                        <p>
-                            <span>Tech Stack: </span>
+                        <p className="projects__data">
+                            <span className="projects__data-category">Tech Stack: </span>
                             {project.technologies}
                         </p>
-                        <p>
-                            <span>Duration: </span>
+                        <p className="projects__data">
+                            <span className="projects__data-category">Duration: </span>
                             {project.time}
                         </p>
-                        <p className="project-links">
-                            <a href={project.appLink} rel="noreferrer" target="_blank">
+                        <div className="projects__link-container">
+                            <a className="projects__link" href={project.appLink} rel="noreferrer" target="_blank">
                                 <IoGlobeOutline />
                             </a>
-                            <a href={project.gitHubLink} rel="noreferrer" target="_blank">
+                            <a className="projects__link" href={project.gitHubLink} rel="noreferrer" target="_blank">
                                 <RiGithubLine />
                             </a>
-                        </p>
+                        </div>
                     </div>
                 </div>
             ))}
