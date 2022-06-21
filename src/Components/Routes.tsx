@@ -15,7 +15,7 @@ export const routes: React.FC<RoutesProps> = (props) => {
                     <Route path="/aboutme" element={<AboutMe />}></Route>
                     <Route path="/projects" element={<Projects />}></Route>
                     <Route path="/skills" element={<Skills />}></Route>
-                    <Route element={<NotFound />}></Route>
+                    <Route path="*" element={<NotFound />}></Route>
                 </Route>
             </Routes>
         </BrowserRouter>
