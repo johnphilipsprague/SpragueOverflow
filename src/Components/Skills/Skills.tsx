@@ -13,7 +13,7 @@ export const Skills: React.FC<SkillsProps> = () => {
                 as a student was the ability to efficiently pick up technologies at rapid speeds.
             </p>
             <p className="skills__text">
-                Applying the PQ4R ( Preview, Question, Read, Reflect, Recite, Review) approach to unfamiliar documentation and utilizing popular, modern tutorials online allows me to immediately start
+                Applying the PQ4R ( Preview, Question, Read, Reflect, Recite, Review) approach to unfamiliar documentation and utilizing modern tutorials online allows me to immediately start
                 implementing new libraries, frameworks, or methodologies.
             </p>
             <p className="skills__text">I’m a lifelong learner, and will never back down from adding a new technology to my stack.</p>

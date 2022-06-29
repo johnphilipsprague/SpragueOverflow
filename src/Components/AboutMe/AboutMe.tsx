@@ -9,11 +9,11 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
             <div className="about-me__bio">
                 <h1 className="about-me__intro"> Hey, I'm John!</h1>
                 <p className="about-me__para">
-                    To kick things off, lets cover some history about little ol' me. I was born and raised in southern Maine by a music instructor and an electrical engineer, so while life has taken
-                    me down many roads with different interests, music and technology have always been large aspects of my life.
+                    To kick things off, lets cover some history about little ol' me. I was born and raised in southern Maine by a music instructor and an electrical engineer, so while over the course
+                    of my life I’ve had many different interests, music and technology have always been large aspects of my life.
                 </p>
                 <p className="about-me__para">
-                    You aren't here to hear about my sick mixtape dropping this summer though, so let's talk about my life-long relationship with tech. Growing up, computers were always within arms
+                    You aren't here to hear about my sick mixtape dropping this summer though, so let's talk about my lifelong relationship with tech. Growing up, computers were always within arms
                     reach. Whether I was playing chess against my father's A.I. he had written in C, farming trees in old school RuneScape, or trouble shooting errors on my neighbors browser so that
                     she could play NeoPets, it was obvious to anyone who knew me that I was captivated.
                 </p>

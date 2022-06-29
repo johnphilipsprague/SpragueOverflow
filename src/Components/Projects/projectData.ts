@@ -7,7 +7,6 @@ export interface ProjectData {
     technologies: string;
     appLink: string;
     gitHubLink: string;
-    role?: string;
 }
 
 export const projectData: Array<ProjectData> = [
@@ -17,10 +16,9 @@ export const projectData: Array<ProjectData> = [
         description: '"A top-down RPG where you control Mort the necromancer. You and your undead companions must combat waves of heroes and ascend the “evil” princess tower to rescue your dragon."',
         teamSize: 4,
         time: '2 weeks',
-        technologies: 'JavaScript, Phaser 3.55, tiled, webpack',
+        technologies: 'JavaScript, Phaser 3.55, Tiled, Webpack',
         appLink: 'https://adventures-of-mort.github.io/',
-        gitHubLink: 'https://github.com/Group-10-Game-Dev/Group-10-Game-Dev.github.io',
-        role: 'I did nothing'
+        gitHubLink: 'https://github.com/Group-10-Game-Dev/Group-10-Game-Dev.github.io'
     },
     {
         imageURL: 'https://i.imgur.com/xG0R9zP.png ',
@@ -30,8 +28,7 @@ export const projectData: Array<ProjectData> = [
         time: '1 and a half weeks',
         technologies: 'JavaScript, React, Redux, Node, Express, Sequelize, PostgreSQL, MaterialUI',
         appLink: 'https://bookstack-fs.herokuapp.com/home',
-        gitHubLink: 'https://github.com/2202-chartreuse-gs/BookStack',
-        role: 'Back end developer'
+        gitHubLink: 'https://github.com/2202-chartreuse-gs/BookStack'
     },
     {
         imageURL: 'https://i.imgur.com/sOOrwhG.png',
