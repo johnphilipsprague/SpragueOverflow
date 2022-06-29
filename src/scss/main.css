@@ -273,7 +273,11 @@ code {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.5em;
+}
+.skills__text {
+  width: 60vw;
+  margin: 1em;
+  line-height: 1.2em;
 }
 .skills__tag {
   width: 60vw;
@@ -284,6 +288,7 @@ code {
 .skills__stack-name {
   font-size: 1.3em;
   color: #009180;
+  font-weight: bolder;
 }
 .skills__container {
   display: flex;
@@ -295,6 +300,7 @@ code {
   border-style: double;
   width: 60vw;
   flex-wrap: wrap;
+  margin-bottom: 1.5em;
 }
 .skills__single-skill {
   display: flex;

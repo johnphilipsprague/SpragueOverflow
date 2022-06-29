@@ -9,8 +9,8 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
             <div className="about-me__bio">
                 <h1 className="about-me__intro"> Hey, I'm John!</h1>
                 <p className="about-me__para">
-                    To kick things off, lets cover some history about little ol' me. I was born and raised in southern Maine by a music instructor and an electical engineer, so while life has taken me
-                    down many roads with different interests, music and technology have always been large aspects of my life.
+                    To kick things off, lets cover some history about little ol' me. I was born and raised in southern Maine by a music instructor and an electrical engineer, so while life has taken
+                    me down many roads with different interests, music and technology have always been large aspects of my life.
                 </p>
                 <p className="about-me__para">
                     You aren't here to hear about my sick mixtape dropping this summer though, so let's talk about my life-long relationship with tech. Growing up, computers were always within arms
@@ -19,7 +19,7 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
                 </p>
                 <p className="about-me__para">
                     Fast forward to January 2022. Over the previous 5 years, opportunity and circumstance had taken me from the forests of Maine to the Rocky Mountains of Colorado to the lake shore of
-                    Illinois. Throughout that time, my relation with tech had come to somewhat of a standstill. It still surrounded my life in a major capacity, but somewhere along the way I had
+                    Illinois. Throughout that time, my relationship with tech had come to somewhat of a standstill. It still surrounded my life in a major capacity, but somewhere along the way I had
                     stopped learning and I felt its absence in my heart.
                 </p>
                 <p className="about-me__para">
