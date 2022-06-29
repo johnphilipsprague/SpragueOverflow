@@ -1,0 +1,21 @@
+.about-me {
+    @include flexCenter(row);
+    &__intro {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+        text-align: center;
+    }
+
+    &__para {
+        padding: 1em;
+        line-height: 1.2em;
+    }
+
+    @include bp(ursa-minor) {
+        @include flexCenter(column);
+        &__image {
+            width: 40vw;
+            margin: 2em;
+        }
+    }
+}

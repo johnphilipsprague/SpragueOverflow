@@ -1,0 +1,41 @@
+.header {
+    @include flexCenter(column);
+
+    width: 80vw;
+    &__logo-wrapper {
+        width: inherit;
+        margin: 1vw;
+    }
+    &__logo-image {
+        width: 26vw;
+    }
+    &__nav-bar {
+        @include flexCenter(row);
+        justify-content: space-between;
+        width: inherit;
+        padding: 1vw 5vw;
+        font-size: 1.2em;
+    }
+    &__link-wrapper {
+        @include flexCenter(row);
+        width: 13vw;
+    }
+    &__link {
+        &:hover {
+            color: $accentColor;
+            transform: scale(1);
+        }
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+    @include bp(ursa-minor) {
+        &__logo-wrapper {
+            @include flexCenter(column);
+            width: 80vw;
+        }
+        &__logo-image {
+            width: 60vw;
+        }
+    }
+}

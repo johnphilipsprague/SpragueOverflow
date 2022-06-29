@@ -1,0 +1,38 @@
+.skills {
+    @include flexCenter(column);
+
+    &__text {
+        width: 60vw;
+        margin: 1em;
+        line-height: 1.2em;
+    }
+
+    &__tag {
+        width: 60vw;
+        text-align: left;
+        font-size: 1em;
+        margin: 0.3em;
+    }
+    &__stack-name {
+        font-size: 1.3em;
+        color: $accentColor;
+        font-weight: bolder;
+    }
+    &__container {
+        @include flexCenter(row);
+        border: 3px;
+        border-color: $primaryColor;
+        border-style: double;
+        width: 60vw;
+        flex-wrap: wrap;
+        margin-bottom: 1.5em;
+    }
+    &__single-skill {
+        @include flexCenter(column);
+        margin: 1em;
+    }
+    &__icon {
+        color: $accentColor;
+        font-size: 1.8em;
+    }
+}

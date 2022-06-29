@@ -1,0 +1,19 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin bp($point) {
+    @if $point == ursa-major {
+        @media (max-width: 1600px) {
+            @content;
+        }
+    }
+    @if $point == ursa-minor {
+        @media (max-width: 1000px) {
+            @content;
+        }
+    }
+}
