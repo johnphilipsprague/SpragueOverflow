@@ -13,9 +13,9 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
                     down many roads with different interests, music and technology have always been large aspects of my life.
                 </p>
                 <p className="about-me__para">
-                    You aren't here to hear about my sick mixtape dropping this summer though, so let's talk about my ever life-long relationship with tech. Growing up, computers were always within
-                    arms reach. Whether I was playing chess against my father's A.I. he had written in C, farming trees in old school RuneScape, or trouble shooting errors on my neighbors browser so
-                    that she could play NeoPets, it was obvious to anyone who knew me that I was captivated.
+                    You aren't here to hear about my sick mixtape dropping this summer though, so let's talk about my life-long relationship with tech. Growing up, computers were always within arms
+                    reach. Whether I was playing chess against my father's A.I. he had written in C, farming trees in old school RuneScape, or trouble shooting errors on my neighbors browser so that
+                    she could play NeoPets, it was obvious to anyone who knew me that I was captivated.
                 </p>
                 <p className="about-me__para">
                     Fast forward to January 2022. Over the previous 5 years, opportunity and circumstance had taken me from the forests of Maine to the Rocky Mountains of Colorado to the lake shore of
@@ -24,7 +24,7 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
                 </p>
                 <p className="about-me__para">
                     Thus, the path ahead became clear. On January 21st of 2022 I was accepted into Fullstack Academy's immersive JavaScript coding bootcamp program, where I was taught front and back
-                    end technologies over the course of 17 weeks. Now my passion this industry has been relit, and there is no going back. I've started learning again with no intention to stop, and
+                    end technologies over the course of 17 weeks. Now my passion for this field has been relit, and there is no going back. I've started learning again with no intention to stop, and
                     I'm excited to see where opportunity and circumstance will lead me now!
                 </p>
             </div>

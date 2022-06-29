@@ -2,6 +2,11 @@
     @include flexCenter(column);
 
     &__greeting {
+        font-size: 2em;
+        margin: 0.7em;
+    }
+
+    &__text {
         margin: 1em;
         font-size: 1.2em;
         line-height: 1.4em;

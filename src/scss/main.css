@@ -160,6 +160,10 @@ code {
   flex-direction: column;
 }
 .home__greeting {
+  font-size: 2em;
+  margin: 0.7em;
+}
+.home__text {
   margin: 1em;
   font-size: 1.2em;
   line-height: 1.4em;
@@ -262,6 +266,46 @@ code {
   .projects__thumbnail {
     width: 60vw;
   }
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5em;
+}
+.skills__tag {
+  width: 60vw;
+  text-align: left;
+  font-size: 1em;
+  margin: 0.3em;
+}
+.skills__stack-name {
+  font-size: 1.3em;
+  color: #009180;
+}
+.skills__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 3px;
+  border-color: #d1d5de;
+  border-style: double;
+  width: 60vw;
+  flex-wrap: wrap;
+}
+.skills__single-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+.skills__icon {
+  color: #009180;
+  font-size: 1.8em;
 }
 
 .footer {
